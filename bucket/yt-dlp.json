@@ -1,0 +1,16 @@
+{
+    "version": "2021.07.07",
+    "description": "A youtube-dl fork with additional features and fixes",
+    "homepage": "https://github.com/yt-dlp/yt-dlp/",
+    "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2021.07.07/yt-dlp.exe",
+    "hash": "739ffbcf25342e528f26cee158a9a1eab360554cfb6fe3d68e70b19cca6a687f",
+    "bin": "yt-dlp.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/yt-dlp/yt-dlp/releases/download/$version/yt-dlp.exe",
+        "hash": {
+            "url": "$baseurl/SHA2-256SUMS",
+            "regex": "$basename:$sha256"
+        }
+    }
+}

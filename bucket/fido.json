@@ -1,0 +1,11 @@
+{
+    "version": "1.20",
+    "description": "A PowerShell script to download Windows retail ISOs",
+    "homepage": "https://github.com/pbatard/Fido",
+    "url": "https://github.com/pbatard/Fido/releases/download/v1.20/Fido.ps1.lzma",
+    "hash": "07e74eb7e8a459e3c6a7f5d572b629f6d79c756ddb0cf1593c1388410e3bf894",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/pbatard/Fido/releases/download/v$version/Fido.ps1.lzma"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "version": "0.3.6",
+    "description": "Netease cloud music copyright protection file dump",
+    "homepage": "https://github.com/yoki123/ncmdump",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/yoki123/ncmdump/releases/download/v0.3.6/ncmdump-windows-amd64-v0.3.6_20201223.zip",
+            "hash": "6a9690ff31576092736d1d67b2bd0f2aae88003092ff0cafe0f6562c264ccc56",
+            "bin": [
+                [
+                    "ncmdump-windows-amd64.exe",
+                    "ncmdump"
+                ]
+            ]
+        }
+    },
+    "extract_dir": "dist",
+    "checkver": {
+        "url": "https://github.com/yoki123/ncmdump/releases",
+        "regex": "([\\d.]+)_(?<date>\\d+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/yoki123/ncmdump/releases/download/v$version/ncmdump-windows-amd64-v$version_$matchDate.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "version": "4.4",
+    "description": "FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created",
+    "homepage": "https://ffmpeg.org",
+    "url": "https://github.com/GyanD/codexffmpeg/releases/download/4.4/ffmpeg-4.4-essentials_build.7z",
+    "hash": "d77782fa3ea48a52a52bff35637cee14143480473a590e6eb3cb97d80488a513",
+    "extract_dir": "ffmpeg-4.4-essentials_build",
+    "env_add_path": "bin",
+    "checkver": {
+        "url": "https://www.gyan.dev/ffmpeg/builds/release-version",
+        "regex": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/GyanD/codexffmpeg/releases/download/$version/ffmpeg-$version-essentials_build.7z",
+        "hash": {
+            "url": "https://www.gyan.dev/ffmpeg/builds/sha256-release-essentials-7z"
+        },
+        "extract_dir": "ffmpeg-$version-essentials_build"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "version": "0.0.5",
+    "description": "Unlock your encrypted music file",
+    "homepage": "https://github.com/unlock-music/cli",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/unlock-music/cli/releases/download/v0.0.5/um-windows-amd64.exe",
+            "hash": "527a8bec8cab48464149ee561b268a589679105101b719120a4d8a68acc0feeb"
+        }
+    },
+    "bin": [
+        [
+            "um-windows-amd64.exe",
+            "unlock-music"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/unlock-music/cli/releases",
+        "regex": "download/v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/unlock-music/cli/releases/download/v$version/um-windows-amd64.exe"
+            }
+        }
+    }
+}
